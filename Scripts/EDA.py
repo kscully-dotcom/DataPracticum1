@@ -117,6 +117,8 @@ validate = df[(df['Date'] >= '2019-01-31')].copy().reset_index(drop=True)
 # =============================================================================
 print(full.columns)
 
+
+full.to_csv('full_dataset.csv', index=False)
 full.iloc[:,1:] = full.iloc[:,1:].apply(lambda x: (x-x.mean())/ x.std(), axis=0)
 
 
@@ -134,4 +136,6 @@ plt.plot('Date','WasteGenerated',data=full, color='black')
 plt.legend(loc='upper left')
 # =============================================================================
 
-
+full.to_csv('Normalized Full data set.csv', index=False)
+train_test.to_csv('Train_Test data set.csv', index=False)
+validate.to_csv('validation data set.csv', index=False)
