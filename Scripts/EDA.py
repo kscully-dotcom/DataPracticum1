@@ -101,11 +101,9 @@ df = fileRecession.merge(
     fileWasteCombusted, how='left').merge(
     fileWasteLandfilled, how='left')
 
-df.drop_duplicates(subset=['PCE','GDP','Inflation',
-                           'Rec', 'CPI',
-                           'WasteGenerated','WasteRecycled',
-                           'WasteCombusted','WasteLandfilled'],
-                   inplace=True)
+df['WasteRecycled'] = df['WasteRecycled']/df['WasteGenerated']
+df['fileWasteCombusted'] = df['fileWasteCombusted']/df['WasteGenerated']
+df['fileWasteLandfilled'] = df['fileWasteLandfilled']/df['WasteGenerated']
 
 full = df[(df['Date'] >= '1960-01-31') & (df['Date'] <= '2022-01-31')].copy().reset_index(drop=True)
 train_test = df[(df['Date'] >= '1960-01-31') & (df['Date'] <= '2018-01-31')].copy().reset_index(drop=True)
