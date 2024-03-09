@@ -1,6 +1,6 @@
 # Textile waste predicted by the health of the economy
 
-Kristin Scully – kscully001@regis.edu – (603) 732 -3852
+Kristin Scully – kscully001@regis.edu
 
 Only 13% of clothing is eventually recycled. (Ellen Macarthur Foundation, 2017) The goal of this research is to identify if there is a relationship between economic collapse, inflation, and the amount of textile waste produced by consumers in the United States. I will perform predictive analysis based on time series data.
 
