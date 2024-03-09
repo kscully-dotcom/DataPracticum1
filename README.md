@@ -35,4 +35,19 @@ The data is transformed to have standardized date ranges and limit municipal sol
 - The regression model you choose doesn’t matter if the predictor variables don’t explain the target variable
 - More effort is needed to find variables that correlate with the target variable
 
+# Next Steps
+- Find or develop predictor variables that better explain the waste generation.
+- Research waste management processes within the largest textile producers
+- Do more sustainable producers produce less waste?
+- Can implementation of new technologies reduce the waste generation of textiles?
+
+Things Learned:
+- Be prepared to pivot your research during the EDA stage, when you find out the relationship between predictor variables and target variables
+
+Ellen Macarthur Foundation. (n.d.) A new textiles economy: Redesigning fashion’s future. Ellen Macarthur Foundation. https://www.ellenmacarthurfoundation.org/a-new-textiles-economy
+
+Scully, K. (2023) Internet of things – Technology as a waste solution for the textile supply chain. Department of Computer Science, Regis University. pp. 2-14.
+
+
+
 
